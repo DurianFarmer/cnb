@@ -55,7 +55,7 @@
 
 ### Hidden functions
 - <img src="https://latex.codecogs.com/gif.latex?-- " /> 
-
+<pre xml:lang="latex">\sqrt{2}</pre>
 - Linear: <img src="https://latex.codecogs.com/gif.latex?h_{1}(\mathbf{x}_{t,i}) = \mathbf{x}_{t,i}^{\top}\mathbf{a} " />
 - Quadratic: $h_{2}(\mathbf{x}_{t,i}) = (\mathbf{x}_{t,i}^{\top}\mathbf{a})^{2}$
 - Non-linear: $h_{3}(\mathbf{x}_{t,i}) = \cos(\pi \mathbf{x}_{t,i}^{\top}\mathbf{a})$
