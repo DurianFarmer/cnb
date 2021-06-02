@@ -54,11 +54,12 @@
 # How to Run the Experiments
 
 ### Hidden functions
-- Linear: `$h_{1}(\mathbf{x}_{t,i}) = \mathbf{x}_{t,i}^{\top}\mathbf{a}$`
+```math
+- Linear: $h_{1}(\mathbf{x}_{t,i}) = \mathbf{x}_{t,i}^{\top}\mathbf{a}$
 - Quadratic: $h_{2}(\mathbf{x}_{t,i}) = (\mathbf{x}_{t,i}^{\top}\mathbf{a})^{2}$
 - Non-linear: $h_{3}(\mathbf{x}_{t,i}) = \cos(\pi \mathbf{x}_{t,i}^{\top}\mathbf{a})$
 - where $\mathbf{a} is sampled from N(0,1)$ and then normalized
-
+```
 ### Experiment 1
 
 ##### For $d=80$, for each hidden function, compare the following algorithms
