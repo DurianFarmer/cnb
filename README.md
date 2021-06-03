@@ -161,7 +161,7 @@ python3 experiment.py \
 --total_rounds 2000 --save exp1_h1_CombLinTS
 ```
 
-***h2 (linear)***
+***h2 (quadratic)***
 - ***CN-UCB***
 ```bash
 python3 experiment.py \
