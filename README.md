@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 # Code for Combinatorial Neural Bandits
 
 This repository is the official implementation of [Combinatorial Neural Bandits](https://arxiv.org/abs/--). 
