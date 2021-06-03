@@ -20,6 +20,8 @@ conda env create -f environment.yml
 - `options.py`: Defines the agent's strategies: Neural or Linear / UCB or TS (single sampling or optimistic sampling).
 - `plot_results.py`: Plots the experiment results.
 
+[Details](#details) is long. If you are interested in how we used the code for the experiments, please go to [How to Run the Code](#how-to-run-the-code).
+
 ## Details
 ### experiment.py
 `experiment.py` has 22 argument parsers. You may choose different values for testing the algorithm.
@@ -118,7 +120,7 @@ Experiment 1 compares ***CN-UCB***, ***CN-TS*** (optimistic sampling) and ***CN-
 To run Experiment 1 in the paper, run the following commands:
 
 ***h1 (linear)***
-- CNUCB
+- ***CN-UCB***
 ```bash
 python3 experiment.py \
 --neural_or_lin neural --ucb_or_ts UCB \
@@ -126,7 +128,7 @@ python3 experiment.py \
 --total_rounds 2000 --save exp1_h1_CNUCB
 ```
 
-- CNTS
+- ***CN-TS***
 ```bash
 python3 experiment.py \
 --neural_or_lin neural --ucb_or_ts TS \
@@ -134,7 +136,7 @@ python3 experiment.py \
 --total_rounds 2000 --save exp1_h1_CNTS
 ```
 
-- CNTS(M=1)
+- ***CN-TS(M=1)***
 ```bash
 python3 experiment.py \
 --neural_or_lin neural --ucb_or_ts TS \
@@ -142,7 +144,7 @@ python3 experiment.py \
 --total_rounds 2000 --save exp1_h1_CNTS_M1
 ```
 
-- CombLinUCB
+- ***CombLinUCB***
 ```bash
 python3 experiment.py \
 --neural_or_lin lin --ucb_or_ts UCB \
@@ -150,7 +152,7 @@ python3 experiment.py \
 --total_rounds 2000 --save exp1_h1_CombLinUCB
 ```
 
-- CombLinTS
+- ***CombLinTS***
 ```bash
 python3 experiment.py \
 --neural_or_lin lin --ucb_or_ts TS \
@@ -159,7 +161,7 @@ python3 experiment.py \
 ```
 
 ***h2 (linear)***
-- CNUCB
+- ***CN-UCB***
 ```bash
 python3 experiment.py \
 --neural_or_lin neural --ucb_or_ts UCB \
@@ -167,7 +169,7 @@ python3 experiment.py \
 --total_rounds 2000 --save exp1_h2_CNUCB
 ```
 
-- CNTS
+- ***CN-TS***
 ```bash
 python3 experiment.py \
 --neural_or_lin neural --ucb_or_ts TS \
@@ -175,7 +177,7 @@ python3 experiment.py \
 --total_rounds 2000 --save exp1_h2_CNTS
 ```
 
-- CNTS(M=1)
+- ***CN-TS(M=1)***
 ```bash
 python3 experiment.py \
 --neural_or_lin neural --ucb_or_ts TS \
@@ -183,7 +185,7 @@ python3 experiment.py \
 --total_rounds 2000 --save exp1_h2_CNTS_M1
 ```
 
-- CombLinUCB
+- ***CombLinUCB***
 ```bash
 python3 experiment.py \
 --neural_or_lin lin --ucb_or_ts UCB \
@@ -191,7 +193,7 @@ python3 experiment.py \
 --total_rounds 2000 --save exp1_h2_CombLinUCB
 ```
 
-- CombLinTS
+- ***CombLinTS***
 ```bash
 python3 experiment.py \
 --neural_or_lin lin --ucb_or_ts TS \
@@ -200,7 +202,7 @@ python3 experiment.py \
 ```
 
 ***h3 (cosine)***
-- CNUCB
+- ***CN-UCB***
 ```bash
 python3 experiment.py \
 --neural_or_lin neural --ucb_or_ts UCB \
@@ -208,7 +210,7 @@ python3 experiment.py \
 --total_rounds 4000 --save exp1_h3_CNUCB
 ```
 
-- CNTS
+- ***CN-TS***
 ```bash
 python3 experiment.py \
 --neural_or_lin neural --ucb_or_ts TS \
@@ -216,7 +218,7 @@ python3 experiment.py \
 --total_rounds 4000 --save exp1_h3_CNTS
 ```
 
-- CNTS(M=1)
+- ***CN-TS(M=1)***
 ```bash
 python3 experiment.py \
 --neural_or_lin neural --ucb_or_ts TS \
@@ -224,7 +226,7 @@ python3 experiment.py \
 --total_rounds 4000 --save exp1_h3_CNTS_M1
 ```
 
-- CombLinUCB
+- ***CombLinUCB***
 ```bash
 python3 experiment.py \
 --neural_or_lin lin --ucb_or_ts UCB \
@@ -232,7 +234,7 @@ python3 experiment.py \
 --total_rounds 4000 --save exp1_h3_CombLinUCB
 ```
 
-- CombLinTS
+- ***CombLinTS***
 ```bash
 python3 experiment.py \
 --neural_or_lin lin --ucb_or_ts TS \
@@ -246,7 +248,7 @@ Experiment 2 compares ***CN-UCB***, ***CN-TS*** (optimistic sampling) and ***CN-
 To run Experiment 2 in the paper, run the following commands:
 
 ***d=40***
-- CNUCB
+- ***CN-UCB***
 ```bash
 python3 experiment.py \
 --neural_or_lin neural --ucb_or_ts UCB \
@@ -254,7 +256,7 @@ python3 experiment.py \
 --total_rounds 2000 --save exp2_40_CNUCB
 ```
 
-- CNTS
+- ***CN-TS***
 ```bash
 python3 experiment.py \
 --neural_or_lin neural --ucb_or_ts TS \
@@ -262,7 +264,7 @@ python3 experiment.py \
 --total_rounds 2000 --save exp2_40_CNTS
 ```
 
-- CNTS(M=1)
+- ***CN-TS(M=1)***
 ```bash
 python3 experiment.py \
 --neural_or_lin neural --ucb_or_ts TS \
@@ -275,7 +277,7 @@ python3 experiment.py \
 Use the results of Experiment 1, ***h2***.
 
 ***d=120***
-- CNUCB
+- ***CN-UCB***
 ```bash
 python3 experiment.py \
 --neural_or_lin neural --ucb_or_ts UCB \
@@ -283,7 +285,7 @@ python3 experiment.py \
 --total_rounds 4000 --save exp2_120_CNUCB
 ```
 
-- CNTS
+- ***CN-TS***
 ```bash
 python3 experiment.py \
 --neural_or_lin neural --ucb_or_ts TS \
@@ -291,7 +293,7 @@ python3 experiment.py \
 --total_rounds 4000 --save exp2_120_CNTS
 ```
 
-- CNTS(M=1)
+- ***CN-TS(M=1)***
 ```bash
 python3 experiment.py \
 --neural_or_lin neural --ucb_or_ts TS \
