@@ -22,21 +22,24 @@ conda env create -f environment.yml
 
 ## Details
 ### experiment.py
-`experiment.py` has 22 argument parsers.
+`experiment.py` has 22 argument parsers. You may choose different values for testing the algorithm.
 
 - Related to the Algorithm
+
 | Argparse Command | Default | Note |
 |---|---|---|
 | --neural_or_lin | nueral | 'neural' for neural bandit, 'lin' for linear bandit |
 | --ucb_or_ts | UCB | 'UCB' for UCB, 'TS' for TS |
 
 - Related to the Score Function
+
 | Argparse Command | Default | Note |
 |---|---|---|
 | --score_ftn | h2 | 'h1', 'h2' or 'h3'. 'h1': linear, 'h2': quadratic, 'h3': cosine |
 | --noise_coef | 0.01 | the intesity of the noise of the scores, *cf. score = h(x) + noise* |
 
 - Related to Arm or Feature Vector
+
 | Argparse Command | Default | Note |
 |---|---|---|
 | --unif | False | If True, sample feature vectors from uniform dist. Else, sample feature vectors from normal dist. |
@@ -44,18 +47,21 @@ conda env create -f environment.yml
 | --n_features | 20 | *d* |
 
 - Related to Combinatorial Selection or Multiple Sampling
+
 | Argparse Command | Default | Note |
 |---|---|---|
 | --n_assortment | False | *K* |
 | --n_samples | 1 | *M*. Sampling number for ***CN-TS*** |
 
 - Related to Rounds per Simulation / Simulations per Experiment
+
 | Argparse Command | Default | Note |
 |---|---|---|
 | --total_rounds | 2000 | *T* |
 | --n_sim | 20 | Number of simulations for one experiment. Average the simulation results for final experiment result. |
 
 - Related to Coefficients
+
 | Argparse Command | Default | Note |
 |---|---|---|
 | --reg_factor | 1.0 | *lambda* |
@@ -64,6 +70,7 @@ conda env create -f environment.yml
 | --gamma | 1.0 | *gamma* |
 
 - Related to the Neural Network
+
 | Argparse Command | Default | Note |
 |---|---|---|
 | --hidden_layer_width | 100 | *m* |
@@ -74,6 +81,7 @@ conda env create -f environment.yml
 | --training_window | 100 | use the recent "training_window" rewards for updating the network |
 
 - Filename to Save the Result
+
 | Argparse Command | Default | Note |
 |---|---|---|
 | --save | '' |  |
