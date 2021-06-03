@@ -9,7 +9,7 @@ This repository is the official implementation of [Combinatorial Neural Bandits]
 ```setup
 conda env create -f environment.yml
 ```
-- Or you may use pip requirements:
+- Or you may use the equvalent pip requirements:
 ```setup
  pip install -r requirements.txt
 ```
@@ -58,8 +58,8 @@ conda env create -f environment.yml
 
 | Argparse Command | Default | Note |
 |---|---|---|
-| --n_assortment | False | *K* |
-| --n_samples | 1 | *M*. Sampling number for ***CN-TS*** |
+| --n_assortment | 4 | *K* |
+| --n_samples | 1 | *M*. Number of samples for ***CN-TS*** |
 
 <br>
 
