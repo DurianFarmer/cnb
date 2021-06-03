@@ -160,12 +160,12 @@ if __name__ == '__main__':
     parser.add_argument('--score_ftn', type=str, default='h2') # score functions. h1, h2, h3. 'h1': linear, 'h2': quadratic, 'h3': cosine
     parser.add_argument('--noise_coef', type=float, default=0.01) # float. coefficient of the noise of scores: noise = noise_coef*N(0,1), score = h_n + noise
 
-    # related to feature vector
+    # related to arm or feature vector
     parser.add_argument('--unif', type=str, default='False') # If True, sample feature vectors from uniform dist. Else, sample feature vectors from normal dist.
     parser.add_argument('--n_arms', type=int, default=20) # N
     parser.add_argument('--n_features', type=int, default=80) # d
     
-    # related to combinatorial choices
+    # related to combinatorial selection or multiple sampling
     parser.add_argument('--n_assortment', type=int, default=4) # K
     parser.add_argument('--n_samples', type=int, default=1) # M
     
