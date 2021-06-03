@@ -15,7 +15,7 @@ conda env create -f environment.yml
 ```
 
 ## Code Description
-- `experiment.py`: Runs the experiments. Refer to [Details](#details).
+- `experiment.py`: Runs the experiments. Please refer to [Details](#details).
 - `combinatorial_bandit.py`: Defines the combinatorial bandit.
 - `options.py`: Defines the agent's strategies: Neural or Linear / UCB or TS (single sampling or optimistic sampling).
 - `plot_results.py`: Plots the experiment results.
