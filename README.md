@@ -31,12 +31,16 @@ conda env create -f environment.yml
 | --neural_or_lin | nueral | 'neural' for neural bandit, 'lin' for linear bandit |
 | --ucb_or_ts | UCB | 'UCB' for UCB, 'TS' for TS |
 
+<br>
+
 - Related to the Score Function
 
 | Argparse Command | Default | Note |
 |---|---|---|
 | --score_ftn | h2 | 'h1', 'h2' or 'h3'. 'h1': linear, 'h2': quadratic, 'h3': cosine |
 | --noise_coef | 0.01 | the intesity of the noise of the scores, *cf. score = h(x) + noise* |
+
+<br>
 
 - Related to Arm or Feature Vector
 
@@ -46,6 +50,8 @@ conda env create -f environment.yml
 | --n_arms | 20 | *N* |
 | --n_features | 20 | *d* |
 
+<br>
+
 - Related to Combinatorial Selection or Multiple Sampling
 
 | Argparse Command | Default | Note |
@@ -53,12 +59,16 @@ conda env create -f environment.yml
 | --n_assortment | False | *K* |
 | --n_samples | 1 | *M*. Sampling number for ***CN-TS*** |
 
+<br>
+
 - Related to Rounds per Simulation / Simulations per Experiment
 
 | Argparse Command | Default | Note |
 |---|---|---|
 | --total_rounds | 2000 | *T* |
 | --n_sim | 20 | Number of simulations for one experiment. Average the simulation results for final experiment result. |
+
+<br>
 
 - Related to Coefficients
 
@@ -68,6 +78,8 @@ conda env create -f environment.yml
 | --delta | 0.1 | *delta* |
 | --nu | 1.0 | *nu* |
 | --gamma | 1.0 | *gamma* |
+
+<br>
 
 - Related to the Neural Network
 
@@ -80,11 +92,15 @@ conda env create -f environment.yml
 | --training_period | 10 | update the network only when "round % training_period == 0" |
 | --training_window | 100 | use the recent "training_window" rewards for updating the network |
 
+<br>
+
 - Filename to Save the Result
 
 | Argparse Command | Default | Note |
 |---|---|---|
 | --save | '' |  |
+
+<br>
 
 ### plot_results.py
 `plot_results.py` has 1 argument parser.
