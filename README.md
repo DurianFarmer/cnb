@@ -111,6 +111,7 @@ conda env create -f environment.yml
 |---|---|---|
 | --exp | 1 | Experiment number. '1' plots the results of Experiment 1. '2' plots the results of Experiment 2. |
 
+<br>
 
 ## How to Run the Code
 
@@ -273,8 +274,7 @@ python3 experiment.py \
 ```
 
 ***d=80***
-
-Use the results of **Experiment 1**, ***h2***.
+- Use the results of **Experiment 1**, ***h2***.
 
 ***d=120***
 - ***CN-UCB***
