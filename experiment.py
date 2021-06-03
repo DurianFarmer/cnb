@@ -110,7 +110,7 @@ def experiment(
     ## Repeat simulation n_sim times
     for i in range(n_sim):
         bandit.reset(i) # use the pre-generated feature vectors and noises for i-th simulation
-        
+        ## Neural
         if neural_or_lin == 'neural':
             model = Neural(ucb_or_ts,
                            bandit,
@@ -129,7 +129,7 @@ def experiment(
             
             model.set_init_param(model.model.parameters()) # keep initial parameters for regularization
         
-        ##TODO        
+        ## Linear     
         elif neural_or_lin == 'lin':
             model = Lin(ucb_or_ts,
                         bandit,
