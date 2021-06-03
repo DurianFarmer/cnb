@@ -24,38 +24,38 @@ conda env create -f environment.yml
 ### experiment.py
 `experiment.py` has 22 argument parsers.
 
-Related to the Algorithm
+- Related to the Algorithm
 | Argparse Command | Default | Note |
 |---|---|---|
 | --neural_or_lin | nueral | 'neural' for neural bandit, 'lin' for linear bandit |
 | --ucb_or_ts | UCB | 'UCB' for UCB, 'TS' for TS |
 
-Related to the Score Function
+- Related to the Score Function
 | Argparse Command | Default | Note |
 |---|---|---|
 | --score_ftn | h2 | 'h1', 'h2' or 'h3'. 'h1': linear, 'h2': quadratic, 'h3': cosine |
 | --noise_coef | 0.01 | the intesity of the noise of the scores, *cf. score = h(x) + noise* |
 
-Related to Arm or Feature Vector
+- Related to Arm or Feature Vector
 | Argparse Command | Default | Note |
 |---|---|---|
 | --unif | False | If True, sample feature vectors from uniform dist. Else, sample feature vectors from normal dist. |
 | --n_arms | 20 | *N* |
 | --n_features | 20 | *d* |
 
-Related to Combinatorial Selection or Multiple Sampling
+- Related to Combinatorial Selection or Multiple Sampling
 | Argparse Command | Default | Note |
 |---|---|---|
 | --n_assortment | False | *K* |
 | --n_samples | 1 | *M*. Sampling number for ***CN-TS*** |
 
-Related to Rounds per Simulation / Simulations per Experiment
+- Related to Rounds per Simulation / Simulations per Experiment
 | Argparse Command | Default | Note |
 |---|---|---|
 | --total_rounds | 2000 | *T* |
 | --n_sim | 20 | Number of simulations for one experiment. Average the simulation results for final experiment result. |
 
-Related to Coefficients
+- Related to Coefficients
 | Argparse Command | Default | Note |
 |---|---|---|
 | --reg_factor | 1.0 | *lambda* |
@@ -63,7 +63,7 @@ Related to Coefficients
 | --nu | 1.0 | *nu* |
 | --gamma | 1.0 | *gamma* |
 
-Related to the Neural Network
+- Related to the Neural Network
 | Argparse Command | Default | Note |
 |---|---|---|
 | --hidden_layer_width | 100 | *m* |
@@ -73,7 +73,7 @@ Related to the Neural Network
 | --training_period | 10 | update the network only when "round % training_period == 0" |
 | --training_window | 100 | use the recent "training_window" rewards for updating the network |
 
-Filename to Save the Result
+- Filename to Save the Result
 | Argparse Command | Default | Note |
 |---|---|---|
 | --save | '' |  |
@@ -89,7 +89,7 @@ Filename to Save the Result
 ## How to Run the Code
 
 ### Experiment 1
-Experiment 1 compares ***CN-UCB***, ***CN-TS*** (optimistic sampling) and ***CN-TS(M=1)*** (single sampling) with prior linear combinatorial algorithms, ***CombLinUCB*** and ***CombLinTS***.  The score functions are *{h1, h2, h3}* and the feature dimension is *d=80*.
+Experiment 1 compares ***CN-UCB***, ***CN-TS*** (optimistic sampling) and ***CN-TS(M=1)*** (single sampling) with prior linear combinatorial algorithms, ***CombLinUCB*** and ***CombLinTS***.  The score functions are ***{h1, h2, h3}*** and the feature dimension is ***d=80***.
 
 To run Experiment 1 in the paper, run the following commands:
 
@@ -217,7 +217,7 @@ python3 experiment.py \
 ```
 
 ### Experiment 2
-Experiment 2 compares ***CN-UCB***, ***CN-TS*** (optimistic sampling) and ***CN-TS(M=1)*** (single sampling) as the feature dimension increases *d={40, 80, 120}*.  The score function is quadratic *h2*.
+Experiment 2 compares ***CN-UCB***, ***CN-TS*** (optimistic sampling) and ***CN-TS(M=1)*** (single sampling) as the feature dimension increases ***d={40, 80, 120}***.  The score function is quadratic ***h2***.
 
 To run Experiment 2 in the paper, run the following commands:
 
@@ -247,7 +247,8 @@ python3 experiment.py \
 ```
 
 ***d=80***
-Use the results of Experiment 1, *h2*.
+
+Use the results of Experiment 1, ***h2***.
 
 ***d=120***
 - CNUCB
