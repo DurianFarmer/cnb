@@ -109,7 +109,7 @@ conda env create -f environment.yml
 
 | Argparse Command | Default | Note |
 |---|---|---|
-| --exp | 1 | Experiment number. '1' plots the results of Experiment 1. '2' plots the results of Experiment 2. |
+| --exp | 1 | Experiment number. <br> '1' plots the results of Experiment 1. <br> '2' plots the results of Experiment 2. |
 
 <br>
 
