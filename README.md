@@ -330,6 +330,3 @@ This suggests that our algorithms can be more applicable to various and complex 
 The empirical results suggest that ***CN-UCB*** and ***CN-TS*** have a scalability in feature dimension ***d*** no higher than linear.
 When ***d*** is large, ***CN-TS*** shows a lower cumulative regret compared to ***CN-TS(M=1)***. 
 This observation supports our claim that ***CN-TS*** secures a constant probability of optimism by drawing multiple ***M*** samples.
-
-## Contact Info.
-Please contact [Taehyun Hwang](th.hwang@snu.ac.kr) or [Kyuwook Chai](kwchai@snu.ac.kr) for anything.
